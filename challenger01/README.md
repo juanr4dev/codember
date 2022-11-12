@@ -6,7 +6,7 @@ Twitter ha sido comprado y quieren eliminar los bots. Te han pedido ayuda para d
 
 La base de datos es muy antigua y está en un formato extraño. Los perfiles requieren tener los siguientes datos:
 
-```json
+```txt
     usr: nombre de usuario
     eme: email
     psw: contraseña
@@ -19,7 +19,7 @@ Todo está en un fichero donde los datos de usuario son una secuencia de pares `
 
 Ejemplo de input:
 
-```json
+```txt
 usr:@midudev eme:mi@gmail.com psw:123456 age:22 loc:bcn fll:82
 
 fll:111 eme:yrfa@gmail.com usr:@codember psw:123456 age:21 loc:World
