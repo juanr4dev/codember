@@ -19,7 +19,7 @@ def loadInput():
                 continue
             profile += ' ' + line.strip()
 
-    profiles.append(line2Dict(profile.strip()))
+    profiles.append(line2Dict(profile))
     return profiles
 
 def hasCorrectKeys(profile):
