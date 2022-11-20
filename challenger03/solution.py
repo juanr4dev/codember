@@ -1,6 +1,7 @@
 
 import ast
 
+# Obtains the longest series of zebra colors
 def bestSerie(colors):
     maxSerie = []
     currentSerie = []
