@@ -1,0 +1,140 @@
+mecenas = [
+    "Gorusuke",
+    "DavidFabian",
+    "ItziarZG",
+    "edy WOLF",
+    "MarcosGaPe",
+    "Jose Jimenez",
+    "Borja ",
+    "Jhonathan Izquierdo Higuita",
+    "MiLfeR322",
+    "Sebastián Espínola",
+    "Matias Luna",
+    "Imanol Decima",
+    "MarcoCasula",
+    "MaríaBohórquez",
+    "Renan",
+    "IvanL'olivier",
+    "Shonero",
+    "Luichidev",
+    "Faviola Narvaez",
+    "Christopher Fuentes",
+    "Kuro",
+    "Juan Pablo Addeo",
+    "Sergio Martínez",
+    "Fran Enriquez González",
+    "Diana",
+    "tictools",
+    "ConchaAsensio",
+    "Emilio_Arreaza",
+    "novamix",
+    "Tomas Duclos",
+    "Elaya",
+    "Ignacio Palominos",
+    "David C.",
+    "Gerardo Felipe Conrado",
+    "ElXuri",
+    "David Borja Martinez",
+    "JaviFelices",
+    "CarlesSànchez",
+    "Gorusuke",
+    "DavidFabian",
+    "ItziarZG",
+    "edy WOLF",
+    "MarcosGaPe",
+    "Jose Jimenez",
+    "Borja ",
+    "Jhonathan Izquierdo Higuita",
+    "MiLfeR322",
+    "Sebastián Espínola",
+    "Matias Luna",
+    "Imanol Decima",
+    "MarcoCasula",
+    "MaríaBohórquez",
+    "Renan",
+    "IvanL'olivier",
+    "Shonero",
+    "Luichidev",
+    "Faviola Narvaez",
+    "Christopher Fuentes",
+    "Kuro",
+    "Juan Pablo Addeo",
+    "Sergio Martínez",
+    "Fran Enriquez González",
+    "Diana",
+    "tictools",
+    "ConchaAsensio",
+    "Emilio_Arreaza",
+    "novamix",
+    "Tomas Duclos",
+    "Elaya",
+    "Ignacio Palominos",
+    "David C.",
+    "Gerardo Felipe Conrado",
+    "ElXuri",
+    "David Borja Martinez",
+    "JaviFelices",
+    "CarlesSànchez",
+    "Gorusuke",
+    "DavidFabian",
+    "ItziarZG",
+    "edy WOLF",
+    "MarcosGaPe",
+    "Jose Jimenez",
+    "Borja ",
+    "Jhonathan Izquierdo Higuita",
+    "MiLfeR322",
+    "Sebastián Espínola",
+    "Matias Luna",
+    "Imanol Decima",
+    "MarcoCasula",
+    "MaríaBohórquez",
+    "Renan",
+    "IvanL'olivier",
+    "Shonero",
+    "Luichidev",
+    "Faviola Narvaez",
+    "Christopher Fuentes",
+    "Kuro",
+    "Juan Pablo Addeo",
+    "Sergio Martínez",
+    "Fran Enriquez González",
+    "Diana",
+    "tictools",
+    "ConchaAsensio",
+    "Emilio_Arreaza",
+    "novamix",
+    "Tomas Duclos",
+    "Elaya",
+    "Ignacio Palominos",
+    "David C.",
+    "Gerardo Felipe Conrado",
+    "ElXuri",
+    "David Borja Martinez",
+    "JaviFelices",
+    "CarlesSànchez"
+]
+
+i = 0;
+offset = 1;
+deleteCount = mecenas.length;
+survivorName = ""
+survivorIndex = -1
+
+while(deleteCount > 1):
+    if (mecenas[i % mecenas.length] == ''):
+        i += 1
+        continue
+
+    if (mecenas[(i + offset) % mecenas.length] == ''):
+        offset += 1
+        continue
+
+    mecenas[(i + offset) % mecenas.length] = ''
+
+    survivorIndex = i % mecenas.length
+    survivorName = mecenas[i % mecenas.length]
+    
+    i += offset+1
+    offset = 1
+    deleteCount -= 1
